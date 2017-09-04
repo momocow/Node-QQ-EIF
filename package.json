@@ -1,0 +1,22 @@
+{
+  "name": "qq-eif",
+  "version": "1.0.0",
+  "description": "Utilities for EIF file format of Tecent QQ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tecent",
+    "qq",
+    "eif"
+  ],
+  "author": "MomoCow",
+  "license": "MIT",
+  "dependencies": {
+    "cfb": "^0.12.1",
+    "fs-extra": "^4.0.1",
+    "lodash": "^4.17.4"
+  }
+}
