@@ -1,3 +1,4 @@
-const eif = module.exports = require('./lib/qq-eif')
-
-eif.listFiles('./test.eif')
+module.exports ={
+  cfb: require('./lib/cfb-fixed'),
+  eif: require('./lib/qq-eif')
+}
