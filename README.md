@@ -14,15 +14,18 @@ methods
 
 ## Documentation
 - ### Methods
-  - [listFiles(src, allowed_exts)](#listFiles)
-  - [listImages(src)](#listImages)
-  - [extract(src, dst, allow_subdir, allowed_exts)]()
-  - [extractImages(src, dst, allow_subdir)]()
+  - [listFiles(src, allowed_exts)](#listfiles)
+  - [listImages(src)](#listimages)
+  - [extract(src, dst, allow_subdir, allowed_exts)](#extract)
+  - [extractImages(src, dst, allow_subdir)](#extractimages)
+
+- ### Objects
+  - [File](#file)
 
 - ### `listFiles`
 `<function>`
   - Return
-    - `<Array <File>>` a list of `File` objects under the file system in the .eif file
+    - `<Array <File>>` a list of [`File`](#file) objects under the file system in the .eif file
   - Parameters
     - `src` `<string>` the path of the .eif file
     - `allowed_exts` `<Array <string>>` if provided, it lists only files with these file extensions; otherwise, all files are listed
@@ -31,6 +34,27 @@ methods
 `<function>`
   - Return
     - `<Array <string>>` a list of images file
+  - Parameters
+    - `src` `<string>` the path of the .eif file
+  - File extensions of images: `['.bmp', '.jpg', '.gif', '.png']`
+
+- ### `extract`
+`<function>` *`#side-effect`*
+  - Extract files from the .eif file
+  - Parameters
+    - `src` `<string>` the path of the .eif file
+    - `dst` `<string>` the directory to contain extracted files and sub-directories
+    - `allow_subdir` `<boolean>` keep the fs structure in the .eif file or not; if false, all files are extracted to the `dst` directory without creating sub-directories
+    - `allowed_exts` `<Array <string>>` if provided, it lists only files with these file extensions; otherwise, all files are listed
+
+- ### `extractImages`
+`<function>` *`side-effect`*
+  - Extract images from the .eif file
+  - Parameters
+    - `src` `<string>` the path of the .eif file
+    - `dst` `<string>` the directory to contain extracted files and sub-directories
+    - `allow_subdir` `<boolean>` keep the fs structure in the .eif file or not; if false, all files are extracted to the `dst` directory without creating sub-directories
+    - File extensions of images: `['.bmp', '.jpg', '.gif', '.png']`
 
 - ### `File`
 `<object>`
