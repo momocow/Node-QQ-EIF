@@ -1,7 +1,7 @@
 {
   "name": "qq-eif",
   "version": "1.0.0",
-  "description": "Utilities for EIF file format of Tecent QQ",
+  "description": "Utilities for EIF file format of Tecent QQ faces",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
