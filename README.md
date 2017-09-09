@@ -21,7 +21,7 @@ methods
 
 - ### Objects
   - [File](#file)
-
+<br><br>
 - ### `listFiles`
 `<function>`
   - Return
